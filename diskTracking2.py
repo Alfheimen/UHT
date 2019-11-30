@@ -1,5 +1,9 @@
 # Source code: https://www.pyimagesearch.com/2015/09/21/opencv-track-object-movement/
-# Last modified by Alina 11.09.19
+# Modified by Alina 11.09.19
+	# Initial program, largely from tutorial.
+
+# Last modified by Kristian 18.09.19
+	# Start of static coordinate system has been added.
 
 from collections import deque
 from imutils.video import VideoStream
