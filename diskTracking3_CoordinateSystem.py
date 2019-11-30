@@ -6,7 +6,6 @@
                 # Argument parser removed
                 # Video file option removed, now always uses video stream
                 # Moved a majority of code into functions
-        #
 
 from collections import deque
 from imutils.video import VideoStream
