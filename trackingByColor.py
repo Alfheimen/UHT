@@ -1,5 +1,6 @@
 #Source code: https://www.youtube.com/watch?v=WKKRt27WJ0w
-#last edited by Alina 11.09.19
+# Last modified by Alina 11.09.19
+    # Simple masking using color ranges.
 
 import cv2
 import numpy as np
@@ -17,7 +18,6 @@ while True:
 
     result = cv2.bitwise_and(frame,frame,mask=mask)
     cv2.imshow("Result",result)
-
 
     if cv2.waitKey(1) == 27:
         break
