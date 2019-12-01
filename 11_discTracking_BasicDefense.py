@@ -34,13 +34,17 @@
     # Impemented function trajectoryCalculation; outputs the X-coordinate of the intersect vector with the X-axis where Y = 0.
         # Test with calculating by hand and seeing if program outputs same X-coordinate.
 
-# Last modified by Kristian 20.11.19
+# Modified by Kristian 20.11.19
     # Fixed trajectory calculation to fit new coordinate system.
     # Added calculateTrajetoryByHand() function with pre-determined points for testing.
         # Can now check result of this function against standard function,as well as
         # doing it by hand, to ensure program outputs correct coordinate.
     # Cleaned up program, improved readability.
-                
+
+# Last modified by Kristian 28.11.19
+	# Fixed bug wherein the program would freeze when attempting to write to the serial port.
+		# Flushing the serial input with serial.flushInput() has solved the issue.
+
 from collections    import deque
 from imutils.video  import VideoStream, FPS
 import numpy as np
